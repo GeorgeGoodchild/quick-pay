@@ -49,7 +49,8 @@ export default {
     computed: {
         ...mapState({
           ui: 'ui',
-          result: 'result'
+          result: 'result',
+          payment: 'payment'
         }),
         ...mapGetters([
           'formattedAmount',
@@ -63,7 +64,7 @@ export default {
         this.$router.push('/');
       },
       onRegister: function() {
-        window.location = 'https://georgegoodchild.typeform.com/to/qKyehVUv?fwid=' + this.result.reference;
+        window.location = 'https://georgegoodchild.typeform.com/to/qKyehVUv?fwid=' + this.result.reference + '&br=' + this.payment.callbackId;
       }
     }
 }
