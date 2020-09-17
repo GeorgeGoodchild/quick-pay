@@ -33,7 +33,7 @@
             </div>
             <div class="card-footer">
                 <button v-if="isError" class="btn btn-primary" v-on:click="onRetry">Try Again</button>
-                <button v-if="!isError" class="btn btn-primary" v-on:click="onRegister">Complete Registration</button>
+                <button v-if="!isError" class="btn btn-primary" v-on:click="onRegister">Continue to Registration</button>
                 <img v-else src="@/assets/flywire.png" height="20px"/>
             </div>
         </div>
