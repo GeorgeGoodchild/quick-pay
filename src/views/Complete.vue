@@ -33,6 +33,7 @@
             </div>
             <div class="card-footer">
                 <button v-if="isError" class="btn btn-primary" v-on:click="onRetry">Try Again</button>
+                <button v-if="!isError" class="btn btn-primary" v-on:click="onRegister">Complete Registration</button>
                 <img v-else src="@/assets/flywire.png" height="20px"/>
             </div>
         </div>
@@ -60,6 +61,9 @@ export default {
     methods: {
       onRetry: function() {
         this.$router.push('/');
+      },
+      onRegister: function() {
+        window.location = 'https://georgegoodchild.typeform.com/to/qKyehVUv?fwid=' + this.result.reference;
       }
     }
 }
