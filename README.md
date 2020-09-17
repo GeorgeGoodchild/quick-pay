@@ -1,4 +1,4 @@
 # quick-pay
 
 Usage: 
-https://flywire-solutions.github.io/quick-pay/
+https://georgegoodchild.github.io/quick-pay/
